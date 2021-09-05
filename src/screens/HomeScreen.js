@@ -4,7 +4,7 @@ import Product from '../components/Product'
 import axios from 'axios'
 
 export default function HomeScreen() {
-
+/*
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -13,12 +13,12 @@ export default function HomeScreen() {
       setProducts(data);
     };
     fetchData();
-  },[] );
+  },[] );*/
 
     return (
         <div className="row center">
         {
-          products.map(product =>(
+          data.product.map(product =>(
             <Product key={product._id} product={product}></Product>
           ))
         }
